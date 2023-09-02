@@ -9,6 +9,13 @@
     <form>
         <h1>Sign up</h1>
         <label><b>Name : </b></label><br>
+        <input list="list" name="Full Name" value="">
+            <datalist id="list">
+                <option value="naimish kapuriya">
+                <option value="prit viramgama">
+                <option value="harshid pipaliya">
+                <option value="dhruv visavadiya">
+            </datalist><br><br>
         <select>
             <option value="full name">full name</option>
         </select><br><br>
@@ -29,7 +36,13 @@
         <label>Insert your resume : </label><br>
         <input type="file" ><br><br>
         <label>Security Question : </label><br>
-        <textarea cols="30" rows="5"></textarea><br><br>
+        <select id="Question">
+            <option value="select">Select</option>
+            <option value="Que 1">How old are you?</option>
+            <option value="Que 2">How to update my password?</option>
+            <option value="Que 3">How change my name?</option>
+        </select><br>
+        <textarea cols="24" rows="5"></textarea><br><br>
         <input type="checkbox">
         <label>I agree terms and conditions</label><br>
         <input type="button" value="Register">
