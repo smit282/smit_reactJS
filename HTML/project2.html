@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .button_submit{
+                background-color: yellow;
+                color: white; 
+                border-radius:5px;
+                border: 1px solid #fff;
+                font-size:17px;
+                padding : 5px 10px ;
+                transition: 0.5s;
+            }
+        .button_submit:hover{
+            background-color: #fff;
+            border: 1px solid yellow;
+            color: yellow;
+        }
+        </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <form style="text-align: center; padding: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25); background-color: burlywood; border-radius: 5px;">
+            <div style="margin: 0px; ">
+                <h2 style="color:black; text-decoration: underline;">FAVORITE FOOD</h2>
+                <h3 style="color:yellow; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background-color: white;">VADAPAV</h3>
+                <h4 style="color:yellow; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); background-color: white;">TYPES OF VADAPAV</h4>
+                <label>TYPES : </label>
+                <select>
+                    <option>--Select Types--</option>
+                    <option>Normal Vadapav</option>
+                    <option>Chess Vadapav</option>
+                    <option>Butter Vadapav</option>
+                    <option>Ulta Vadapav</option>
+                    <option>Gravy Vadapav</option>
+                    <option>Grill Vadapav</option>
+                    <option>Samosa Vadapav</option>
+                </select><br><br>
+
+                <img src="image/vada-pav.webp" alt="" style="height: 100px; width: auto; border-radius: 5px;"><br><br>
+                <button type="submit" value="SUBMIT"  class="button_submit"><b>SUBMIT</b> <i class="fa fa-arrow-right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
