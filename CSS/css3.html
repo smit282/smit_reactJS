@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .demo {
+            background-color: yellow;
+            height: 400px;
+            width: 400px;
+        }
+
+        .demo-1 {
+            height: 300px;
+            width: 300px;
+            background-color: tomato;
+            border: 1px solid blue;
+            margin: 20px;
+            /* top right bottom left */
+            margin-top: 50px;
+            /* top */
+            margin-left: 100px;
+            /* left */
+            margin-right: 50px;
+            /* right */
+            margin-bottom: 20px;
+            /* bottom */
+            margin: 20px 40px;
+            /* top-bottom right-left */
+            margin: 10px 20px 30px;
+            /* top left-right bottom */
+            margin: 10px 20px 30px 40px;
+            /* top right bottom left */
+            padding: 20px;
+            /* top right bottom left */
+            padding-top: 50px;
+            /* top */
+            padding-left: 100px;
+            /* left */
+            padding-right: 100px;
+            /* right */
+            padding-bottom: 50px;
+            /* bottom */
+            padding: 20px 40px;
+            /* top-bottom right-left */
+            padding: 10px 20px 30px;
+            /* top left-right bottom */
+            padding: 10px 20px 30px 40px;
+            /* top right bottom left */
+        }
+
+        .div-1 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            margin: 20px;
+            /* top right bottom left */
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+            margin: 20px 40px;
+            margin: 10px 20px 30px;
+            margin: 10px 20px 30px 40px;
+        }
+
+        .div-2 {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            padding: 20px;
+            padding-top: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 50px;
+            padding: 20px 40px;
+            padding: 10px 20px 30px;
+            padding: 10px 20px 30px 40px;
+
+        }
+
+        .content-box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border: 10px solid blue;
+            padding: 10px;
+            box-sizing: content-box;
+        }
+
+        .border-box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            border: 10px solid blue;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .box-1{
+            max-width: 500px;
+            background-color: yellowgreen;
+            margin-bottom: 100px;
+        }
+
+        .box-2{
+            min-width: 800px;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .box-3{
+            max-width: 500px;
+            max-height: 200px;
+            background-color: brown;
+            margin-bottom: 200px;
+        }
+
+        .box-4{
+            min-width: 500px;
+            min-height: 200px;
+            background-color: brown;
+            margin-bottom: 100px;
+        }
+
+        .box-5{
+            min-height: 100px;
+            background-color: yellow;
+        }
+
+        ol{
+            list-style-type: armenian;
+            list-style-type: decimal;
+            list-style-type: decimal-leading-zero;
+            list-style-type: georgian;
+            list-style-type: lower-alpha;
+            list-style-type: lower-greek;
+            list-style-type: lower-latin;
+            list-style-type: lower-roman;
+            list-style-type: none;
+            list-style-type: upper-alpha;
+            list-style-type: upper-latin;
+            list-style-type: upper-roman;
+            list-style-position: inside;
+        }
+
+        ul{
+            list-style-type: disc;
+            list-style-type: circle;
+            list-style-type: square;
+            list-style-image: url(../HTML/image/js.png);
+            list-style-position: inside;
+        }
+
+        .box-1{
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            box-shadow: 20px 20px 4px rgba(0, 0, 255, 0.396);
+        }
+
+        .box-2{
+            margin: 50px;
+            height: 300px;
+            width: 300px;
+            background-color: rgb(48, 86, 6);
+            box-shadow: -10px -10px 10px rgba(32, 134, 18, 0.396);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        padding
+        margin
+        css box sizing model
+        width
+        height
+        max-width
+        max-height
+        min-width
+        min-height
+        listing style
+        css box shadow
+     -->
+
+    <div class="demo-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perferendis magnam in optio
+        impedit veritatis, quo eaque neque modi laborum doloribus voluptas autem asperiores debitis quod, eos libero
+        amet soluta.</div>
+    <div class="demo-1" style="margin-top: 40px;"></div>
+
+    <!-- css box model -->
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+
+    <!-- css width / height -->
+    <!-- width
+     height
+     max-width
+     max-height
+     min-width
+     min-height -->
+
+     <p style="min-width: 500px; border: 2px solid red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit beatae voluptatem nobis quasi at repellat enim perspiciatis consequatur iusto, amet veniam eligendi alias. Doloremque in quasi praesentium nihil eos!
+     </p>
+
+     <ol>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+     </ol>
+
+     <ul>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+        <li>option-1</li>
+     </ul>
+
+     <div class="box-1"></div>
+     <div class="box-2"></div>
+</body>
+
+</html>
