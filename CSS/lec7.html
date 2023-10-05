@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           box-sizing: border-box; 
+        }
+
+        body{
+            margin: 0 ;
+        }
+
+        .fixeddiv{
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            width: 100%;
+            top: 100px;
+            margin: auto;
+            z-index: -1;
+        }
+
+        .stikdiv{
+            position: sticky;
+            top: 500px;
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            border: 5px solid red;
+        }
+
+        .mainbox{
+            display: flex;
+            height: 600px;
+            width: 1500px;
+            border: 2px solid blue;
+        }
+
+        .box-1{
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+            position: absolute;
+            right: 0;
+        }
+
+        .box-2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            right: 0;
+            bottom: 0;
+        }
+
+        .box-3{
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            bottom: 0;
+            position: absolute;
+        }
+
+        .box-4{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+
+        .box-5{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        .box-6{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+        }
+
+        .box-7{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+
+        .box-8{
+            height: 100px;
+            width: 100px;
+            background-color: purple;
+        }
+
+        .box-9{
+            height: 100px;
+            width: 100px;
+            background-color: lightgreen;
+        }
+
+        .z-index-1{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .z-index-2{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+        }
+
+        .clear-1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            float: left;
+            clear: left;
+        }
+
+        .clear-2{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            float: right;
+            clear: left;
+        }
+
+        .clear-3{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            float: left;
+            clear: both;
+        }
+
+        .box-11{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            overflow: hidden;
+            overflow: auto;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+        </style>
+</head>
+<body>
+    <div class="fixeddiv"></div>
+    <div class="mainbox"></div>
+    <div class="box-1"></div>
+    <div class="box-2"></div>
+    <div class="box-3"></div>
+    <div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+        <div class="box-8"></div>
+        <div class="box-9"></div>
+    </div>
+    <div class="stikdiv"></div>
+    <div class="z-index-1"></div>
+    <div class="z-index-2"></div>
+
+    <p class="float-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui labore ad omnis ipsam ducimus ipsum in itaque debitis doloremque error laboriosam magni, dolorem sequi sapiente totam ipsa odit possimus rerum. <div class="clear-1"></div><div class="clear-2"></div><div class="clear-3"></div></p>
+
+    <Div class="box-11">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, laboriosam quae qui doloribus quis vitae distinctio voluptas, dolores commodi at enim, nobis ipsum. Ipsam excepturi repellendus magni facilis eveniet inventore.
+        </p>
+    </Div>
+</body>
+</html>
