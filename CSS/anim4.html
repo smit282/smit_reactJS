@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            position: relative;
+            animation: mymove 10s reverse;
+            margin: 10.5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 gray;
+        }
+
+        .div1 {
+            animation-timing-function: linear;
+            background-color: yellow;
+        }
+
+        .div2 {
+            animation-timing-function: ease;
+            background-color: red;
+        }
+
+        .div3 {
+            animation-timing-function: ease-in;
+            background-color: orange;
+        }
+
+        .div4 {
+            animation-timing-function: ease-out;
+            background-color: green;
+        }
+
+        .div5 {
+            animation-timing-function: ease-in-out;
+            background-color: blue;
+        }
+
+        .div6 {
+            animation-timing-function: linear;
+            background-color: blueviolet;
+        }
+
+        .div7 {
+            animation-timing-function: ease;
+            background-color: seagreen;
+        }
+
+        .div8 {
+            animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+            background-color: gold;
+        }
+
+        .div9 {
+            animation-timing-function: inherit;
+            background-color: darkcyan;
+        }
+
+        .div10 {
+            animation-timing-function: ease-in-out;
+            background-color: aqua;
+        }
+
+        .div11 {
+            animation-timing-function: ease-out;
+            background-color: chartreuse;
+        }
+
+        .div12 {
+            animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+            background-color: khaki;
+        }
+
+        .div13 {
+            animation-timing-function: inherit;
+            background-color: slateblue;
+        }
+
+        .div14 {
+            animation-timing-function: unset;
+            background-color: salmon;
+        }
+
+        .div15 {
+            animation-timing-function: ease-in;
+            background-color: aquamarine;
+        }
+
+        .div16 {
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+            background-color: violet;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+    <div class="div7"></div>
+    <div class="div8"></div>
+    <div class="div9"></div>
+    <div class="div10"></div>
+    <div class="div11"></div>
+    <div class="div12"></div>
+    <div class="div13"></div>
+    <div class="div14"></div>
+    <div class="div15"></div>
+    <div class="div16"></div>
+</body>
+</html>
