@@ -5,34 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>web</title>
     <style>
-        .h1{
-            margin-left: 140px;
-            font-size: 80PX;
+        .maindiv{
+            background-color: white ; padding: 20px; display: flex; align-items: center; justify-content: space-between; width: 1480px;
         }
-        P{
-            margin-left: 140px;
-            font-size: 15px;
+        .h1{
+            margin-left: 240px;
+            margin-top: 140px;
+            font-size: 130PX;
+        }
+        .p1{
+            margin-left: 240px;
+            margin-top: 50px;
+            font-size: 20px;
             color: lightslategrey;
+        }
+        .logo{
+            margin: 5px 0px 0px 52px;
+            height: 30px;
+        }
+        .menu{
+            color: gray;
+            margin-left:1600px;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        hr{
+            width: 1565px;
+            margin-top: -50px;
+        }
+        .p2{
+            color: lightslategray;
+            margin-top: -255px;
+            font-size: 25px;
+            text-align: end;
+        }
+        .div1{
+            margin-right: 230px;
         }
     </style>
 </head>
 <body>
-    <header style="position: fixed; top: 0; width: 100%;">
-        <div class="navigation" style="background-color: white ; padding: 20px; display: flex; align-items: center; justify-content: space-between; width: 1480px;">
+        <div class="maindiv">
             <div class="logo">
-                <img src="image/logo.png" alt="" style="width: auto; height: 20px; border-radius: 4px;">
+                <img src="image/logo.png" alt="" class="logo">
             </div>
             <div class="navigat">
                 <nav>
-                    <a href="#" style="padding: 20px; color: gray;">Menu</a>
+                    <a href="#" class="menu">Menu</a>
                 </nav>
             </div>
-            
         </div>
         <div>
-            <h1 class="h1">CREATIVITY </h1>
-            <p>CREATIVE AGENCY</p>
+            <h1 class="h1">CREATIVITY</h1><hr>
+            <p class="p1">CREATIVE AGENCY</p>
+            <div class="div1">
+            <p class="p2">We are a team of professional specialists who<br>craft and execute your marketing strategy<br>from development to designing.<p>
+            </div>
         </div>
-    </header>
 </body>
 </html>
