@@ -1,0 +1,113 @@
+.maindiv {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1480px;
+}
+
+.h1 {
+    margin-left: 225px;
+    margin-top: 140px;
+    font-size: 130PX;
+}
+
+.p1 {
+    margin-left: 220px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: lightslategrey;
+}
+
+.logo {
+    margin: 5px 0px 0px 52px;
+    height: 30px;
+}
+
+.menu {
+    color: gray;
+    margin-left: 1600px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+hr {
+    width: 1565px;
+    margin-top: -50px;
+}
+
+.p2 {
+    color: lightslategrey;
+    margin-top: -255px;
+    font-size: 25px;
+    text-align: end;
+}
+
+.div1 {
+    margin-right: 230px;
+}
+
+.h2 {
+    margin-top: 200px;
+    margin-left: 220px;
+}
+
+.menu1 {
+    margin-left: 220px;
+    text-decoration: none;
+}
+
+.img2 {
+    position: absolute;
+    height: 700px;
+    width: 600px;
+    margin-left: 220px;
+    margin-top: 110px;
+}
+
+.img3 {
+    position: absolute;
+    height: 450px;
+    width: 640px;
+    margin-left: 1000px;
+    margin-top: 235px;
+}
+
+.img4 {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    margin-left: 220px;
+    margin-top: 1000px;
+}
+
+.img5 {
+    position: absolute;
+    height: 670px;
+    width: 645px;
+    margin-left: 1000px;
+    margin-top: 850px;
+}
+
+.img6 {
+    position: absolute;
+    height: 700px;
+    width: 600px;
+    margin-left: 220px;
+    margin-top: 1555px;
+}
+
+.img7 {
+    position: absolute;
+    height: 380px;
+    width: 645px;
+    margin-left: 1000px;
+    margin-top: 1710px;
+
+}
+
+.img7:hover {
+    background-color: transparent;
+    color: #fff;
+}
