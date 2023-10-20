@@ -1,0 +1,58 @@
+*{
+    background-color: rgb(248,247,250);
+    /* box-sizing: border-box; */
+}
+
+.index{
+    height: 970px;
+    width: 345px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serchbar{
+    height: 80px;
+    width: 78%; 
+    position: absolute;
+    top: 25px;
+    right: 55px;
+    border-radius: 8px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content1{
+    height: 249px;
+    width: 38%; 
+    position: absolute;
+    top: 155px;
+    left: 392px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(115,103,240);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content2{
+    height: 249px;
+    width: 17%; 
+    position: absolute;
+    top: 155px;
+    right: 450px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content3{
+    height: 249px;
+    width: 17%; 
+    position: absolute;
+    top: 155px;
+    right: 58px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
