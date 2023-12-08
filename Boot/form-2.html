@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="form-2.css">
+    <title>form-2</title>
+</head>
+<body>
+    <div class="container-xxl">
+        <h1 class="display-4 text-capitalize text-center my-3">bootstrap paymet forms</h1>
+        <div class="container-sm">
+            <div class="form-btns d-flex align-items-center">
+                <div class="btn-group row row-cols-md-3 w-100 mx-auto" role="group"
+                    aria-label="Basic radio toggle button group">
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">
+                        <p class="fs-5 text-capitalize d-flex justify-content-center align-items-center h-100">
+                            <i class="fa-solid fa-credit-card me-3" style="color: #ffffff;"></i>
+                            credit card
+                        </p>
+                    </label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">
+                        <p class="fs-5 text-capitalize  d-flex justify-content-center align-items-center h-100"
+                            style="color: black;">
+                            <i class="fa-brands fa-paypal me-3" style="color: black;"></i>
+                            payPal
+                        </p>
+                    </label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">
+                        <p class="fs-5 text-capitalize  d-flex justify-content-center align-items-center h-100"
+                            style="color: black;">
+                            <i class="fa-solid fa-mobile-screen-button me-3" style="color: black;"></i>
+                            net banking
+                        </p>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-body my-3">
+                <label for="name" class="form-label fs-4 text-capitalize">card owner</label>
+                <input type="email" class="form-control my-2" id="name" placeholder="Card Owner name ">
+                <label for="card-number" class="form-label fs-4 text-capitalize mt-1">card number</label>
+
+                <div class="input-group px-1 py-2">
+                    <input type="number" class="form-control" placeholder="Valid card number"
+                        aria-label="Recipient's username with two button addons" id="card-number">
+                    <button class="btn btn-outline-secondary" style="border: none; background-color: #dbdbdb;"
+                        type="button"><i class="fa-brands fa-cc-visa"></i></button>
+                    <button class="btn btn-outline-secondary" style="border: none; background-color: #dbdbdb;"
+                        type="button"><i class="fa-brands fa-cc-mastercard"></i></button>
+                    <button class="btn btn-outline-secondary" style="border: none; background-color: #dbdbdb;"
+                        type="button"><i class="fa-brands fa-cc-paypal"></i></button>
+                </div>
+
+                <div class="row mt-3 px-2">
+                    <div class="col-8">
+                        <h5 class="text-capitalize mb-3">expiration date</h5>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="MM" aria-label="Username">
+                            <input type="number" class="form-control" placeholder="YY" aria-label="Server">
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <h5 class="mb-3">CVV <i class="fa-solid fa-circle-question"></i></h5>
+                        <input type="number" class="form-control" placeholder="" aria-label="Server">
+                    </div>
+                </div>
+
+                <div class="form-button my-4">
+                    <div class="d-grid gap-2 col-12 mx-auto p-1">
+                        <button class="btn btn-primary btn-lg" type="button">confirm payment</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
