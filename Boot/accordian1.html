@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="accordian.css">
+    <title>Document</title>
+    <style>
+    body {
+        background: linear-gradient(to left,rgb(241,139,114),rgb(95,129,199));
+    }
+    </style>
+</head>
+<body>
+    <div class="p-5">
+        <div class="accordion" id="accordionExample" style="width: 40rem; margin: auto;">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: rgb(95,81,98);">
+                        <h5 style="color: rgb(216, 195, 195);">ONE</h5>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light" style="background: linear-gradient(to left,rgb(199,136,138),rgb(138,132,175));">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt tenetur asperiores quidem
+                        dolores fugit debitis perspiciatis dicta nisi delectus architecto odio blanditiis vitae
+                        repudiandae rerum laboriosam, molestiae alias eum ducimus ad nobis quis. Commodi esse possimus
+                        saepe, quia quaerat illo reiciendis distinctio nam minima sed, doloremque ad vel laudantium
+                        dolore!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: rgb(95,81,98);">
+                        <h5 style="color: rgb(216, 195, 195);">TWO</h5>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light" style="background: linear-gradient(to left,rgb(199,136,138),rgb(138,132,175));">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, ipsa esse, similique
+                        repudiandae nobis reprehenderit explicabo, ab tempora ex veritatis eligendi! Ipsam totam
+                        quaerat, nobis atque magni nihil, illum eaque molestiae odit incidunt harum iure quis,
+                        aspernatur consequatur doloremque eveniet labore tenetur sunt. Amet nisi dolorum, et neque
+                        tenetur soluta?
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: rgb(95,81,98)">
+                        <h5 style="color: rgb(216, 195, 195);">THREE</h5>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light" style="background: linear-gradient(to left,rgb(199,136,138),rgb(138,132,175));">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate earum molestias
+                        ullam adipisci eum quas recusandae veniam doloribus modi dolore ipsum, praesentium nam?
+                        Molestiae laborum quis quisquam veniam, fugiat consequatur vel facere numquam, dicta, asperiores
+                        esse facilis aspernatur voluptas corrupti atque aut placeat voluptate repellat incidunt
+                        laudantium accusamus id.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
