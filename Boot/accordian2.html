@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Component2</title>
+    <style>
+        .accordion-item ::after {
+            background-image: url(../HTML/image/plus-lg.svg);
+        }
+
+        .accordion-button:not(.collapsed) ::after {
+            background-image:url(../HTML/image/dash-lg.svg);
+        }
+        
+        .accordion-item {
+            border: 0px !important;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="p-5">
+        <div class="accordion px-5 m-auto w-75 mt-5" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: rgb(87, 87, 245);">
+                        <p style="color: white;" class="fw-bold">Collapsible Group Item #1</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show shadow bg-body-tertiary" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex">
+                        <img src="../HTML/image/asset 2.jpeg" alt="" style="height: 9rem;" class="rounded-circle">
+                        <div class="px-4">
+                            <h4 class="text-secondary">Find Your New Home With a Click</h4>
+                            <p class="text-secondary">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" style="background-color: rgb(87, 87, 245);">
+                        <p style="color: white;" class="fw-bold">Collapsible Group Item #2</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse shadow bg-body-tertiary" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex">
+                        <img src="../HTML/image/asset 2.jpeg" alt="" style="height: 9rem;" class="rounded-circle">
+                        <div class="px-4">
+                            <h4 class="text-secondary">Find Your New Home With a Click</h4>
+                            <p class="text-secondary">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree" style="background-color: rgb(87, 87, 245);">
+                        <p style="color: white;" class="fw-bold">Collapsible Group Item #3</p>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse shadow bg-body-tertiary" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex">
+                        <img src="../HTML/image/asset 2.jpeg" class="rounded-circle" alt="" style="height: 9rem;">
+                        <div class="px-4">
+                            <h4 class="text-secondary">Find Your New Home With a Click</h4>
+                            <p class="text-secondary">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour" style="background-color: rgb(87, 87, 245);">
+                        <p style="color: white;" class="fw-bold">Collapsible Group Item #4</p>
+                    </button>
+                </h2>
+                <div id="collapsefour" class="accordion-collapse collapse shadow bg-body-tertiary" data-bs-parent="#accordionExample">
+                    <div class="accordion-body d-flex">
+                        <img src="../HTML/image/asset 2.jpeg" class="rounded-circle" alt="" style="height: 9rem;">
+                        <div class="px-4">
+                            <h4 class="text-secondary">Find Your New Home With a Click</h4>
+                            <p class="text-secondary">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa asperiores magnam eum. Temporibus aliquid sunt ex, tempora velit mollitia voluptatibus ratione, eum inventore neque odio. Illum consequatur adipisci quo iusto?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
