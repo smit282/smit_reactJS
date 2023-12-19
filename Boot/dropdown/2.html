@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+      .hover :hover{
+        transition: 0.5s;
+        border: 1px solid red;
+        color: red;
+      }
+    </style>  
+</head>
+<body>
+    <div class="dropdown m-5">
+      <button class="btn btn-primary dropdown-toggle" style="border-radius: 0px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body-tertiary">
+        <li><button class="dropdown-item" type="button">Lable</button></li>
+        <li><button class="dropdown-item active" type="button">Active</button></li>
+      </ul>
+    </div>
+
+    <div class="dropdown m-5">
+      <button class="btn btn-primary dropdown-toggle" style="border-radius: 0px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body-tertiary">
+        <li><button class="dropdown-item" type="button">Lable</button></li>
+        <li><button class="dropdown-item disabled" type="button">Disabled</button></li>
+      </ul>
+    </div>
+
+    <div class="dropdown m-5">
+      <button class="btn btn-primary dropdown-toggle" style="border-radius: 0px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body-tertiary">
+        <li><button class="dropdown-item" type="button">Lable</button></li>
+        <li><button class="dropdown-item text-primary" type="button">Selected</button></li>
+      </ul>
+    </div>
+
+  <div class="dropdown m-5">
+    <button class="btn btn-primary dropdown-toggle" style="border-radius: 0px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body-tertiary">
+      <li><button class="dropdown-item" type="button">Lable</button></li>
+      <li><button class="dropdown-item" type="button">Enabled</button></li>
+    </ul>
+  </div>
+
+  <div class="dropdown m-5">
+    <button class="btn btn-primary dropdown-toggle" style="border-radius: 0px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu shadow-lg p-3 mb-5 bg-body-tertiary">
+      <li><button class="dropdown-item" type="button">Lable</button></li>
+      <div class="hover">
+        <li><button class="dropdown-item" type="button">Hover</button></li>
+      </div>
+    </ul>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
