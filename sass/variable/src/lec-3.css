@@ -1,0 +1,58 @@
+.main {
+  border: 100px;
+  height: red;
+  left: 10px;
+}
+
+.para {
+  border: purple;
+  height: 200px;
+  left: 20px;
+}
+
+.box {
+  border: red;
+  height: 100px;
+  left: 10px;
+}
+
+.main {
+  border: 10px solid red;
+}
+
+.box {
+  border: 10px solid red;
+}
+
+.box-1 {
+  border: 10px solid red;
+}
+
+.box-2 {
+  border: 10px solid red;
+}
+
+.box-3 {
+  border: 10px solid red;
+}
+
+.box-1 {
+  margin-top: 50px;
+  border: 10px solid red;
+  height: 200px;
+  width: auto;
+}
+
+.box-2 {
+  margin-top: 50px;
+  border: 10px solid red;
+  height: 200px;
+  width: auto;
+}
+
+.box-3 {
+  margin-top: 50px;
+  border: 10px solid red;
+  height: 200px;
+  width: auto;
+}
