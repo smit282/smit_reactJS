@@ -1,10 +1,10 @@
 //Multiple assignement
 
 $list : ((main , red , 100px , 10px) , (para , purple , 200px , 20px) , (box , red , 100px  , 10px));
-$list : ((main , 100px ,red  , 10px) , (para , purple , 200px , 20px) , (box , red , 100px  , 10px));
+$list : ((main , 100px , red  , 10px) , (para , purple , 200px , 20px) , (box , red , 100px  , 10px));
 
-@each $name , $color , $size , $position in $list{
-  .#{$name}{
+@each $name , $color , $size , $position in $list {
+  .#{$name} {
     border:$color;
     height: $size;
     left:$position;
@@ -12,27 +12,26 @@ $list : ((main , 100px ,red  , 10px) , (para , purple , 200px , 20px) , (box , r
 }
 
 
-@each $a in main box box-1 box-2 box-3{
+@each $a in main box box-1 box-2 box-3 {
     .#{$a}{
-        border:10px solid red;
+        border:5px solid red;
     }
 }
 
-.box-1{
-margin-top: 50px;
-    border:10px solid red;
-    height: 200px;
-    width: auto;
-}
-.box-2{
-margin-top: 50px;
-    border:10px solid red;
-    height: 200px;
-    width: auto;
-}
-.box-3{
+.box-1 {
     margin-top: 50px;
-    border:10px solid red;
     height: 200px;
-    width: auto;
+    width: 200px;
+}
+
+.box-2 {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.box-3 {
+    margin-top: 50px;
+    height: 200px;
+    width: 200px;
 }
