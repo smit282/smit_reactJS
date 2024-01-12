@@ -1,0 +1,82 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 350px;
+}
+
+.form {
+  width: 100%;
+  margin: 30px 0px 0px 30px;
+  padding: 1px 0px 1px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+div {
+  margin-bottom: 20px;
+}
+div ::-moz-placeholder {
+  color: #a9a8a8;
+}
+div ::placeholder {
+  color: #a9a8a8;
+}
+
+.input-1 {
+  width: 87%;
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+.colur .input-2 {
+  width: 87%;
+  padding: 10px;
+  border: 1px solid #21df21;
+  border-radius: 10px;
+}
+.colur ::-moz-placeholder {
+  color: #21df21;
+}
+.colur ::placeholder {
+  color: #21df21;
+}
+
+.color .input-3 {
+  width: 87%;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.color ::-moz-placeholder {
+  color: red;
+}
+.color ::placeholder {
+  color: red;
+}
+
+.input-4 {
+  width: 87%;
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 15px;
+}
+
+.input-4[type=disabled]:disabled {
+  background: #eeeeee;
+}
+
+input {
+  margin-top: 12px;
+}

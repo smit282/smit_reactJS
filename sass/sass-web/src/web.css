@@ -1,0 +1,46 @@
+.box {
+  width: 22%;
+  height: 50px;
+  margin-left: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: auto;
+  border-radius: 20px;
+}
+
+.fa-solid {
+  display: flex;
+  justify-content: center;
+  margin: 55px 0px 55px 0px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: gray;
+  padding: 10px;
+}
+
+h5 {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 15px;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  background-color: blue;
+  border-radius: 15px 0px 0px 15px;
+  padding: 4px;
+}
