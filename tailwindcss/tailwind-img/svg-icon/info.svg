@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+  <g id="Info_icon" transform="translate(0.75 0.75)">
+    <g id="Info_Circle" data-name="Info Circle" transform="translate(0 0)">
+      <path id="Stroke_1" data-name="Stroke 1" d="M9.25,0A9.25,9.25,0,1,1,0,9.25,9.25,9.25,0,0,1,9.25,0Z" fill="none" stroke="#394858" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M.5,0V4.419" transform="translate(8.745 5.454)" fill="none" stroke="#394858" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Stroke_5" data-name="Stroke 5" d="M.5.5H.5" transform="translate(8.75 12.546)" fill="none" stroke="#394858" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
