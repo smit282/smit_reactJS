@@ -1,8 +1,4 @@
-
 // What is javascript
-
-
-
 /*
 -> JavaScript is a dynamic computer programming language.
 -> It is lightweight and most commonly used as a part of web pages, whose implementations allow client-side script to interact with the user and make dynamic pages. It is an interpreted programming language with object-oriented capabilities.
@@ -68,8 +64,6 @@ comments */
     console.log(_nameone);
     console.log(typeof(_nameone));
 
-
-
     var one = 20
     var two = 40
 
@@ -117,7 +111,5 @@ comments */
 }
 
 /*  
-
 Name must start with a letter (a to z or A to Z), underscore( _ ), or dollar( $ ) sign. After first letter we can use digits (0 to 9), for example value1. JavaScript variables are case sensitive, for example x and X are different variables.
-
 */
