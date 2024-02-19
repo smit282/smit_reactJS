@@ -1,0 +1,40 @@
+.pagination{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.digit{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digit a{
+    text-decoration: none;
+}
+
+.prev , .next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.pagination .digit:nth-child(8){
+    margin-right: 10px;
+}
+
+.pagination .digit:nth-child(2){
+    margin-left: 10px;
+}
+
+.digit:hover{
+    text-decoration: underline;
+    margin-top: -6px;
+    color: white;
+    transition: 2s;
+}

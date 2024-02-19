@@ -1,0 +1,109 @@
+.pagination{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.round{
+    width: 40px;
+    height: 40px;
+    border:2px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round a{
+    text-decoration: none;
+    color: gray;
+}
+
+.prev , .next{
+    margin-top: -4px;
+    color: gray;
+}
+
+.pagination .round:nth-child(8){
+    margin-right: 10px;
+}
+
+.pagination .round:nth-child(2){
+    margin-left: 10px;
+}
+
+.pagination .round:hover:nth-child(2){
+    height: 40px;
+    width: 40px;
+    border:2px solid red;
+    background-color: red;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(3){
+    height: 40px;
+    width: 40px;
+    border:2px solid orange;
+    background-color: orange;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(4){
+    height: 40px;
+    width: 40px;
+    border:2px solid yellow;
+    background-color: yellow;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(5){
+    height: 40px;
+    width: 40px;
+    border:2px solid green;
+    background-color: green;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(6){
+    height: 40px;
+    width: 40px;
+    border:2px solid blue;
+    background-color: blue;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(7){
+    height: 40px;
+    width: 40px;
+    border:2px solid indigo;
+    background-color: indigo;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+.pagination .round:hover:nth-child(8){
+    height: 40px;
+    width: 40px;
+    border:2px solid violet;
+    background-color: violet;
+    border-radius: 100px;
+    margin-top: -6px;
+    transition: 1s;
+}
+
+.round:hover a{
+    color: white;
+}
+
+.prev:hover , .next:hover{
+    text-decoration: underline;
+    margin-top: -10px;
+    color: green;
+    transition: 0.5s;
+}

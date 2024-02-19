@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-img{
+            margin-top: 110px;
+            height: 70%;
+            width: 99%;
+            position: absolute;
+        }
+
+        .sun{
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: #d8a500;
+            animation-name: sun;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+
+        @keyframes sun{
+            0%{
+                margin-left: 800px;
+                background-color: #d8a500;
+                transform: translateY(-150px)
+            }
+            
+            50%{
+                margin-left: 800px;
+                opacity: 1;
+                background-color: #d8a500;
+                transform: translateY(100px)
+            }
+            75%{
+                margin-left: 800px;
+                opacity: 1;
+                background-color: #d8a500;
+                transform: translateY(250px)
+            }
+            100%{
+                margin-left: 800px;
+                opacity: 0;
+                background-color: orangered;
+                transform: translateY(400px)
+            }
+        }
+
+        .cloud{
+            width: 180px;
+            height: 120px;
+            position: absolute;
+        }
+
+        .cloud-b{
+            width: 260px;
+            height: 150px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <img class="bg-img" src="../img/mountain.bgstripped.png" alt="">
+    <img class="cloud cloud-1" src="../img/cloud.svg" alt="">
+    <img class="cloud cloud-2" src="../img/cloud.svg" alt="">
+    <img class="cloud-b cloud-3" src="../img/cloud.svg" alt="">
+    <img class="cloud-b cloud-4" src="../img/cloud.svg" alt="">
+
+</body>
+</html>

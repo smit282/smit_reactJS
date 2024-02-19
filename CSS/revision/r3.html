@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animation {
+            margin: 50px;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            background-color: #470e6f;
+            animation-name: circle;
+            animation-timing-function: linear;
+            animation-duration: 5s;
+        }
+
+        @keyframes circle {
+            0%{
+                transform: translate(0px);
+            }
+            25%
+            {
+                border: 10px solid #8d6ce6;
+                transform: translate(50px);
+            }
+            50%{
+                border: 15px solid #8d6ce6;
+                transform: translate(100px);
+            }
+            75%{
+                border: 10px solid #8d6ce6;
+                transform: translate(150px);
+            }
+            100%{
+                transform: translate(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>

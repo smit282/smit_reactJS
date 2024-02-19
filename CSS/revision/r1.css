@@ -1,0 +1,115 @@
+body
+{
+    background-color: #fcbc43;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: all 0.5s ease-in-out;
+}
+
+main
+{
+    display: grid;
+    min-height: 100vh;
+}
+
+.card-group
+{
+    display: flex;
+    width: 100%;
+}
+
+.card-group .card
+{
+    height: 400px;
+    width: 34rem;
+    margin: auto;
+    position: relative;
+}
+
+.card .card-img
+{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card:hover .card-img img
+{
+    transform: scale(1.15);
+}
+
+.card .card-body
+{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    padding: 3rem;
+}
+
+.card:hover .card-head
+{
+    margin-top: 2.4rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.card-body .card-head .heading
+{
+    font-size: 1.5rem;
+    color: #fcbc43;
+    margin-bottom: 0.6rem;
+}
+
+.card-body .card-head .para
+{
+    color: #ffffff;    
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.card-body .card-head .date,
+.card-body .card-head .date i
+{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.card-body .card-foot .profile-box
+{
+    display: flex;
+    align-items: center; 
+}
+
+.card-foot .profile-box .profile-img
+{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #fcbc43;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.card-body .card-foot .profile-box .profile-data h4,
+.card-body .card-foot .profile-box .profile-data p
+{
+    color: #ffffff;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
