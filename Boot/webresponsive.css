@@ -1,0 +1,11 @@
+@media (max-width:768px) {
+    .nav .contact-Btns{
+        margin: 0px auto;
+    }
+}
+
+@media (max-width:576px) {
+    .nav .contact-Btns{
+        margin: 0px auto;
+    }
+}

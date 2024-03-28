@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* carousel-CSS file Import  for slider */
-@import url(CarouselCSS/carousel.css);
-
 /*  default  Css  */
 * {
-    /* font-size: 62.5%; */
     padding: 0;
     margin: 0%;
 }
@@ -23,55 +19,57 @@
 }
 
 /* header section - I  */
-header h1::selection,
-header small::selection {
-    background-color: transparent;
-    color: white;
-}
-
 header {
-    margin-bottom: 7rem;
-    background-color: rgb(245, 223, 78);
+    margin-bottom: 5rem;
+    background-color: #f5df4e;
 }
 
 .nav {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
-    padding-bottom: 20px;
-    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: #f5df4e;
 }
 
-.nav .btn-check,
-.nav .navbar-close-btn,
-.nav .navbar-open-btn {
-    right: 0%;
+.nav .nav-icon {
     height: 30px;
-    width: 30px;
-    background-color: transparent;
 }
-
 .nav .btn img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;    
 }
 
 header .header-box {
-    padding-top: 194px;
+    padding-top: 80px;
 }
 
 /* header deta  */
 /* animation text  */
-header .header-box .row .header-deta .head-text .dynamic-text {
+header .header-box .row .deta .text .dynamic-text {
     overflow: hidden;
     max-height: 84px;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
 }
 
-header .header-box .row .header-deta .head-text .dynamic-text li h1 {
+header .header-box .row .deta .text .anim-text li
+{
+    animation:to-top 14s steps(3) infinite alternate;
+}
+
+@keyframes to-top  {
+    0%
+    {
+        transform: translateY(100%);
+    }
+
+    100%
+    {
+        transform: translateY(-200%);
+    }
+    
+}
+
+header .header-box .row .deta .text .anim-text li h1 {
     display: inline-block;
     position: relative;
     height: 100%;
@@ -80,7 +78,7 @@ header .header-box .row .header-deta .head-text .dynamic-text li h1 {
     animation: text-width 2.4s steps(9) infinite alternate;
 }
 
-header .header-box .row .header-deta .head-text .dynamic-text li h1::after {
+header .header-box .row .deta .text .anim-text li h1::after {
     position: absolute;
     top: 0%;
     right: 0%;
@@ -96,25 +94,30 @@ header .header-box .row .header-deta .head-text .dynamic-text li h1::after {
 }
 
 @keyframes text-width {
-    0% {
+    0%
+    {
         width: 20%;
     }
 
-    50% {
-        width: 110%;
+    50%
+    {
+        width:110%;
     }
 
-    75% {
-        width: 110%;
+    75%
+    {
+        width:110%;
     }
 
-    100% {
-        width: 110%;
+    100%
+    {
+        width:110%;
     }
 }
 
 @keyframes blinak-arrow {
-    100% {
+    100%
+    {
         opacity: 1;
     }
 }
@@ -134,15 +137,15 @@ header .header-box .row .header-image img {
 }
 
 /* header-button  */
-header .header-box .row .header-deta .header-button {
+header .header-box .row .deta .header-button {
     max-width: 60%;
 }
 
-header .header-box .row .header-deta .header-button .btn {
+header .header-box .row .deta .header-button .btn {
     padding: 8px 16px !important;
 }
 
-header .header-box .row .header-deta .header-button .button-link a {
+header .header-box .row .deta .header-button .button-link a {
     text-decoration: underline;
 }
 
@@ -165,7 +168,7 @@ header .header-box .head-drop-btn .btn-link a {
     }
 }
 
-/* =================================== main ========================*/
+/* main */
 /* section heading  */
 .about-S1 .ab-heading h5,
 .what-i-do .row .what-heading h5,
@@ -180,7 +183,7 @@ header .header-box .head-drop-btn .btn-link a {
 
 /* section - 1 about me  */
 .about-S1 {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
 }
 
 .about-S1 .ab-deta .ab-text h1 span {
@@ -233,11 +236,7 @@ header .header-box .head-drop-btn .btn-link a {
 /*  section - 2 What I Do  */
 .what-i-do {
     background-color: #F8F9FA;
-    margin-bottom: 7rem;
-}
-
-.what-i-do .row {
-    padding: 60px 0px;
+    margin-bottom: 6rem;
 }
 
 .what-i-do .row .what-heading {
@@ -258,7 +257,6 @@ header .header-box .head-drop-btn .btn-link a {
 
 .what-i-do .row .col-md-6 .W-box .icon i {
     font-size: 3.4rem;
-    color: #00FFFF;
 }
 
 .what-i-do .row .col-md-6 .W-box p {
@@ -310,13 +308,18 @@ header .header-box .head-drop-btn .btn-link a {
     background-color: #F8F9FA;
 }
 
-.portfolio .row {
+.portfolio .row
+{
     padding: 60px 0px;
 }
 
 /* portfolio-link */
-.portfolio .row .col-12 .portfolio-link {
+.portfolio .row .col-12 .portfolio-link
+{
     width: 50%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    /* overflow-x: auto; */
 }
 
 .portfolio .row .col-12 .portfolio-link .Prot-link-wrapper {
@@ -370,6 +373,7 @@ header .header-box .head-drop-btn .btn-link a {
 
 /* section - 5  hire-me  */
 .hire-me {
+    margin-top: 4rem;
     height: 85vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../HTML/image/asset\ 13.jpeg);
     background-position: top;
@@ -394,7 +398,7 @@ header .header-box .head-drop-btn .btn-link a {
 }
 
 .FAQ .FAQ-wrapper .row {
-    padding: 120px 0px 80px 0px;
+    padding: 4rem 0px 80px 0px;
 }
 
 /* FAQ .FAQ-heading  */
@@ -407,6 +411,7 @@ header .header-box .head-drop-btn .btn-link a {
     border-radius: 0%;
     background: none;
     margin: 26px auto;
+    line-height: 10px;
 }
 
 .FAQ .FAQ-wrapper .row .col-12 .FAQ-deta .accordion-item .accordion-header .accordion-button {
@@ -414,10 +419,8 @@ header .header-box .head-drop-btn .btn-link a {
     padding-left: 40px;
     box-shadow: none !important;
     width: 100%;
-    background: none;
-    color: #000;
     border: none;
-    opacity: 0.4;
+    color: #8e9a9d;
     transition: all 0.3s ease-in-out;
 }
 
@@ -439,13 +442,10 @@ header .header-box .head-drop-btn .btn-link a {
 /* contact-form */
 .contact-form form input,
 .contact-form form textarea {
-    margin-top: 0.5rem;
     background: transparent;
     padding: 0%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid rgb(245, 223, 78);
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, .12);
 }
 
 .contact-form form input:focus,

@@ -22,6 +22,319 @@ body
     background-color: #F7F6F9;
 }
 
+/* main css ============================================================ */
+
+.container
+{
+    /* border: 2px solid red; */
+    /* display:flex ;
+    flex-flow: row wrap;
+    justify-content:flex-end; */
+    display: grid;
+    grid-template-columns: 280px auto;
+    grid-template-rows: auto;
+}
+
+.asid-menu{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    
+    background-color: #fff;
+    box-shadow: 2px 0px 6px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin: auto;
+    max-width:260px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 5px 0px ;
+}
+
+
+
+/*  aside bar box ==================================================================== */
+
+
+aside::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+aside::-webkit-scrollbar-thumb {
+    background-color: #7367f0;
+    border-radius: 5px;
+    outline: 1px solid rgb(47, 142, 238);
+}
+
+aside{
+    width: 100%;
+    overflow:auto;
+    height: 100%;
+}
+
+
+aside::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+
+/* asid logo ====================================== */
+
+
+aside .aside-logo{
+    background-image: linear-gradient(to bottom ,#ffffff, #ffffff,rgba(255, 255, 255, 0.9),rgba(255, 255, 255, 0.9)) ;
+    position: sticky;
+    z-index: 5;
+    top: 0%;
+    left: 0%;
+    margin: auto;    
+    padding:15px 8px 10px 8px ;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content:center;
+}
+
+aside .aside-logo .logo{
+    display:block;
+    width: 35px;
+    height:50px;
+}
+
+aside .aside-logo .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position:center;    
+}
+
+aside .aside-logo .logo-text{
+    padding: 0% 10px;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #5d596c;
+    font-size: 2.2rem;
+}
+
+
+aside .aside-logo .logo-btn{
+    justify-self: flex-end;
+    margin: auto 0px auto 55px;
+    display: block;
+    padding: 2.8px;
+    width: 25px;
+    height: 25px;
+}
+
+aside .aside-logo .logo-btn a{
+    margin: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    outline: 2px solid #5d596c ;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+}
+
+aside .aside-logo .logo-btn a:focus-within span{
+    opacity: 0;
+}
+
+aside .aside-logo .logo-btn a span{
+    display: block;
+    width:7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #5d596c;
+    transition: all 0.1s linear;
+}
+
+   
+/*======================  aside-buttons ====================================== */
+
+
+aside .aside-buttons .row-I-btns{
+    padding: 1px;
+}
+
+aside .aside-buttons .row-I-btns .I-btn
+{
+    margin: 3px auto;
+    width: 232px;
+    height: 40px;
+    overflow: hidden;
+    
+}
+
+aside .aside-buttons .row-I-btns h1
+{
+    margin: 21px 0px 8px  28px ;
+    align-items: left;
+    padding: 2px;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #6b667a;
+    text-transform: capitalize;
+}
+
+
+aside .aside-buttons .row-I-btns .I-btn:hover{
+    height: auto;
+    overflow: visible;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    border-radius: 6px;
+    height: 40px;
+    width: 100%;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head:hoverx{
+    background-color: #c7c6c93e;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head .icon{
+    
+    grid-column:1/2;
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head .icon img{
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head h3{
+    grid-column:2/5;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    font-size: 1.5rem;
+    color: #5d596c;
+    text-transform: capitalize;
+}
+
+aside .aside-buttons .row-I-btns .I-btn .head h3 span{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #7367f0;
+    line-height:2.2rem;
+    border-radius: 12px;
+    width: 32px;
+    height: 24px;
+    display: inline-block;
+}
+
+
+aside .aside-buttons .row-II-btns .II-btn .head h3 span
+{
+    background-color: #EA5455;
+}
+
+
+aside .aside-buttons .row-I-btns .I-btn .head .fa-right
+{
+    margin: auto;
+}
+
+
+aside .aside-buttons .row-I-btns .I-btn .head .fa-right .fa-chevron-right{
+    line-height: 2.2rem;
+    font-size: 1.4rem;   
+}
+
+
+aside .aside-buttons .row-I-btns .I-btn ul{
+    width: 100%;
+}
+
+
+aside .aside-buttons .row-I-btns .I-btn ul li
+{
+    border-radius: 9px;
+    height: 38px;
+    margin: 3px auto;
+    font-size: 2rem;
+}
+
+
+
+aside .aside-buttons .row-I-btns .I-btn ul li:hover{
+    background-color: #6d697b29;
+}
+
+
+
+aside .aside-buttons .row-I-btns .I-btn ul li a{
+    display:block;
+    height: 100%;
+    position: relative;
+    text-indent: 50px;
+    border-radius: 9px;
+    color: #6d697b;
+    text-align:left;
+    letter-spacing: 0.5px;
+    line-height: 3.6rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+aside .aside-buttons .row-II-btns .II-btn ul li a .fa-solid 
+{
+    font-size: 1.2rem;
+    position: absolute;
+    top:50%;
+    right:8%;
+    transform: translate(0%,-50%);
+}
+
+aside .aside-buttons .row-I-btns .I-btn ul li a::before{
+    content: "";
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translate(0%,-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #6d697b;
+}
+
+aside .aside-buttons .row-I-btns .I-btn ul li a:focus-within{
+    color: #fff;
+    background-image: linear-gradient(to right,#9389F4,#b4b0da);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);  
+}
+
+aside .aside-buttons .row-I-btns .I-btn ul li a:focus-within::before{
+    border-color: #fff;
+}
+
+aside .aside-buttons .row-I-btns #dashbords ul li:nth-child(3) a::first-letter
+{
+    text-transform: lowercase !important;
+}
+
 #main
 {
     grid-column: 2/-1;
@@ -1870,7 +2183,7 @@ h1
     top: 10%;
     left:20%;
     transform: translate(20%,12%);
-    z-index: 1;
+    z-index:  1;
     width: 31px;
     height: 31px;
     display: block;
@@ -2081,4 +2394,18 @@ h1
 #row-4 .IV-col-II .col-card-9 .col-card-9-footer .foot-wrapper .foot-btns #next-btn
 {
     width: 56px;
+}
+
+#row-4 .IV-col-II .col-card-9 .col-card-9-footer .foot-wrapper .foot-btns .f-btn{
+    width: 110px;
+    margin-top: 30px;
+    margin-left: 130px;
+    padding: 10px 10px 10px 10px;
+    background-color: red;
+    color: white;
+}
+
+#row-4 .IV-col-II .col-card-9 .col-card-9-footer .foot-wrapper .foot-btns .f-btn:hover{
+    background-color: #d6d6d6;
+    color: red;
 }

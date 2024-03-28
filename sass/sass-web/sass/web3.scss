@@ -1,32 +1,38 @@
-*{
+* {
     color: white;
-}
-
-.box{
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+  }
+  
+  .box {
     width: 25%;
-    margin: 50px;
+    height: 250px;
     padding: 50px;
-    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 20px;
     background-color: #0d0d3b;
-}
-
-img{
+  }
+  
+  img {
     margin-left: 36%;
     border-radius: 100%;
-}
-
-h1{
+  }
+  
+  h1 {
     margin-top: 0px;
     text-align: center;
-}
-
-p{
+  }
+  
+  p {
     text-align: center;
-}
-
-button{ 
+  }
+  
+  button {
     width: 90%;
     border-radius: 10px;
     border: none;
@@ -35,4 +41,4 @@ button{
     background-color: #5353ec;
     padding: 15px;
     font-weight: bold;
-}
+  }
