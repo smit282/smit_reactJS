@@ -1,11 +1,71 @@
+@media (max-width:1200){
+    footer .row {
+        padding: 10rem;
+    }
+}
+
 @media (max-width:768px) {
     .nav .contact-Btns{
         margin: 0px auto;
+    }
+
+    header .header-box .row .deta .text .anim-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .header-box .row .deta .header-button .btn {
+        margin-left: 5rem;
+    }
+
+    .FAQ .FAQ-wrapper .row .FAQ-heading {
+        text-align: center;
+    }
+
+    footer .row {
+        padding: 4rem !important;
+    }
+
+    .contactt .container-sm .row .col-12 h1{
+        text-align: center;
+    }
+
+    .contactt .container-sm .row .col-12 p{
+        text-align: center;
+    }
+    
+    .contactt .container-sm .row .col-12 h5{
+        text-align: center;
     }
 }
 
 @media (max-width:576px) {
     .nav .contact-Btns{
         margin: 0px auto;
+    }
+
+    header .header-box .row .deta .header-button .button-link a {
+        flex-wrap: nowrap;
+    }
+
+    .FAQ .FAQ-wrapper .row .FAQ-heading {
+        text-align: center;
+    }
+
+    footer .row {
+        padding: 4rem !important;
+    }
+
+    .contactt .container-sm .row .col-12 h1{
+        text-align: center;
+    }
+
+    .contactt .container-sm .row .col-12 p{
+        text-align: center;
+    }
+
+    .contactt .container-sm .row .col-12 h5{
+        text-align: center;
     }
 }
